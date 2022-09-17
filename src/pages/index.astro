@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import common from '../config/common.json';
+---
+
+<Layout title={common.title}>
+  <main>
+    <div class='wrapper'>
+      <h1><span>servergoblin</span>.<span>net</span></h1>
+      <a href={common.downloadUrl} download><button>download</button></a>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+
+    max-width: 60ch;
+
+    height: 100vh;
+
+    color: #fff;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+    widows: 100%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h1 span {
+    color: #00d55a;
+  }
+
+  button {
+    margin-bottom: 4.5rem;
+
+    background: #fff;
+    color: var(--color-bg);
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    text-transform: uppercase;
+  }
+
+  button:active {
+    transform: translateY(-5px);
+  }
+</style>
