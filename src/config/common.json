@@ -1,5 +1,8 @@
 {
   "title": "servergoblin.net",
-  "downloadUrl": "/api/modpack.zip",
-  "githubUrl": "https://github.com/m2vi/goblin"
+  "url": {
+    "download": "/archive/modpack.zip",
+    "github": "https://github.com/m2vi/goblin",
+    "patreon": "https://www.patreon.com/servergoblin"
+  }
 }
